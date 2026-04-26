@@ -7,11 +7,9 @@ public class Bullet : MonoBehaviour
     
     private Rigidbody _rb;
 
-    private void Start()
+    private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-        
-        SpawnBullet(Vector3.forward);
     }
 
     public void SpawnBullet(Vector3 direction)
