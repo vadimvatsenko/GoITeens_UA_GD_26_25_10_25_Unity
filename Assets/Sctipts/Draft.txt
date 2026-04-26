@@ -1,0 +1,16 @@
+﻿1. Camera Follow
+2. Hero Mouse Rotation
+3. Camera Follow With Rotation // вимкнути Camera Follow, камера дитина гравця
+4. Bullet => Об'єкт => Скрипт => Префаб => Точка спавна => логіка постілу.
+5. GameManager(Скрипт + Об'єкт) => Coin => CoinRot(додати подію) => ScoreUI(скрипт)
+
+```
+Hierarchy  
+├── ScoreManager  
+├── Canvas  
+│ └── CoinsText  
+├── Player  
+└── CoinSpawner
+``` 
+
+ 
