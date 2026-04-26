@@ -8,12 +8,15 @@ public class RigidMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private Transform groundCheck;
+    
     private bool _isGrounded;
     
     private Rigidbody _rb;
-
+    
     private void Start()
     {
+        //_rb = GetComponent<Rigidbody>();
+        
         _rb = GetComponent<Rigidbody>();
     }
 
@@ -51,8 +54,9 @@ public class RigidMovement : MonoBehaviour
         {
             _rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
+        
     }
-
+    
     private void OnDrawGizmos()
     {
         Gizmos.color = _isGrounded ? Color.green : Color.red;

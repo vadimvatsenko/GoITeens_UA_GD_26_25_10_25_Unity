@@ -129,9 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinRotation
   rotationSpeed: 180
-  onTochCoin:
-    m_PersistentCalls:
-      m_Calls: []
+  coinCost: 10
 --- !u!1 &8818674080022028007
 GameObject:
   m_ObjectHideFlags: 0

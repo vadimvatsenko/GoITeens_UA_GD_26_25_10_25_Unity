@@ -1,11 +1,11 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class CoinRotation : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 180f;
-    [SerializeField] private UnityEvent<int> onTochCoin;
-
+    [SerializeField] private int coinCost = 10;
+    
     private float currentZ = 0;
 
     private void Update()
@@ -18,8 +18,7 @@ public class CoinRotation : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            onTochCoin?.Invoke(10);
-            Destroy(this.gameObject, 0.5f);
+            Destroy(this.gameObject);
         }
     }
 }
